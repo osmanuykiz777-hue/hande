@@ -16,15 +16,34 @@
         padding: 25px;
     }
     .profile-box img {
-        width: 115px;   /* Profil fotoğrafını büyüttük */
+        width: 115px;
         height: 115px;
         border-radius: 50%;
         object-fit: cover;
     }
     .profile-info {
-        font-size: 26px;   /* İsim yazısı büyütüldü */
+        font-size: 26px;
         font-weight: 700;
         line-height: 32px;
+    }
+
+    /* HIZLI ARA BUTONU (PROFİL YANINDA) */
+    .call-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    .call-btn img {
+        width: 24px;
+        height: 24px;
     }
 
     /* WHATSAPP ÜST BAR */
@@ -37,19 +56,19 @@
         gap: 14px;
         margin: 0 15px 18px 15px;
         color: #fff;
-        font-size: 24px;  /* Buton yazısı büyütüldü */
+        font-size: 24px;
         font-weight: 700;
         text-decoration: none;
     }
     .whatsapp-bar img {
-        width: 42px;  /* WhatsApp simgesi büyütüldü */
+        width: 42px;
         height: 42px;
     }
     .whatsapp-bar span {
         font-size: 22px !important;
     }
 
-    /* FOTOĞRAF GALERİSİ 2x2 (ESKİ HALİ) */
+    /* FOTOĞRAF GALERİSİ 2x2 */
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -60,6 +79,22 @@
         width: 100%;
         border-radius: 12px;
         object-fit: cover;
+    }
+
+    /* SABİT HIZLI ARA BUTONU (ALTTA, WHATSAPP ÜSTÜ) */
+    .call-btn-bottom {
+        position: fixed;
+        bottom: 60px; /* WhatsApp butonunun üstüne */
+        left: 0;
+        right: 0;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 16px 0;
+        text-decoration: none;
+        z-index: 999;
     }
 
     /* ALTTAKİ SABİT WHATSAPP BUTONU */
@@ -81,9 +116,17 @@
 <!-- PROFİL ALANI -->
 <div class="profile-box">
     <img src="profil.jpg" alt="">
-    <div class="profile-info">
-        VİP ESCORT ESMA<br>
-        Konum : Alsancak
+    <div>
+        <div class="profile-info">
+            VİP ESCORT ESMA<br>
+            Konum : Alsancak
+        </div>
+
+        <!-- HIZLI ARA BUTONU (PROFİL YANINDA) -->
+        <a href="tel:+905362000000" class="call-btn">
+            <img src="call-icon.png" alt="">
+            Tıkla Hızlı Ara
+        </a>
     </div>
 </div>
 
@@ -101,6 +144,12 @@
     <img src="https://i0-wp-com.cdn.ampproject.org/i/s/i0.wp.com/hedonebiz.site/uploads/izmir-universiteli_1.png">
     <img src="https://i0-wp-com.cdn.ampproject.org/i/s/i0.wp.com/hedonebiz.site/uploads/izmir-universiteli_1.png">
 </div>
+
+<!-- SABİT HIZLI ARA BUTONU (ALTTA, WHATSAPP ÜSTÜ) -->
+<a href="tel:+905362000000" class="call-btn-bottom">
+    <img src="call-icon.png" alt="">
+    Tıkla Hızlı Ara
+</a>
 
 <!-- SABİT WHATSAPP BUTONU -->
 <a href="https://wa.me/905362000000" class="whatsapp-bottom">
