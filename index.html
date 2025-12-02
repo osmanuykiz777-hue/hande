@@ -16,13 +16,13 @@
         padding: 25px;
     }
     .profile-box img {
-        width: 115px;
+        width: 115px;   /* Profil fotoğrafını büyüttük */
         height: 115px;
         border-radius: 50%;
         object-fit: cover;
     }
     .profile-info {
-        font-size: 26px;
+        font-size: 26px;   /* İsim yazısı büyütüldü */
         font-weight: 700;
         line-height: 32px;
     }
@@ -30,38 +30,36 @@
     /* WHATSAPP ÜST BAR */
     .whatsapp-bar {
         background: #25D366;
-        padding: 22px;
+        padding: 22px; 
         border-radius: 20px;
         display: flex;
         align-items: center;
         gap: 14px;
         margin: 0 15px 18px 15px;
         color: #fff;
-        font-size: 24px;
+        font-size: 24px;  /* Buton yazısı büyütüldü */
         font-weight: 700;
         text-decoration: none;
     }
     .whatsapp-bar img {
-        width: 42px;
+        width: 42px;  /* WhatsApp simgesi büyütüldü */
         height: 42px;
     }
     .whatsapp-bar span {
         font-size: 22px !important;
     }
 
-    /* FOTOĞRAF GALERİSİ 2x2 - KIRPMADAN KÜÇÜLTÜLDÜ */
+    /* FOTOĞRAF GALERİSİ 2x2 (ESKİ HALİ) */
     .gallery {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 6px;
         padding: 10px;
-        justify-items: center; /* Fotoğrafı hücre ortalar */
     }
     .gallery img {
-        max-width: 140px;  /* Fotoğrafın maksimum genişliği */
         width: 100%;
-        height: auto;      /* ORANI BOZMADAN küçültme */
         border-radius: 12px;
+        object-fit: cover;
     }
 
     /* ALTTAKİ SABİT WHATSAPP BUTONU */
@@ -72,8 +70,8 @@
         right: 0;
         background: #25D366;
         text-align: center;
-        padding: 22px 0;
-        font-size: 24px;
+        padding: 22px 0; 
+        font-size: 24px; 
         font-weight: 700;
         color: #fff;
         text-decoration: none;
