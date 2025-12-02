@@ -4,7 +4,7 @@
 <style>
     body {
         margin: 0;
-        font-family: 'Righteous', sans-serif; /* FONT AKTİF */
+        font-family: 'Righteous', sans-serif;
         background: #fff;
     }
 
@@ -16,53 +16,54 @@
         padding: 25px;
     }
     .profile-box img {
-        width: 115px;   /* 85 → 115 yapıldı */
-        height: 115px;  /* 85 → 115 yapıldı */
+        width: 115px;
+        height: 115px;
         border-radius: 50%;
         object-fit: cover;
     }
     .profile-info {
-        font-size: 26px;   /* 22 → 26 */
+        font-size: 26px;
         font-weight: 700;
-        line-height: 32px; /* 28 → 32 */
+        line-height: 32px;
     }
 
     /* WHATSAPP ÜST BAR */
     .whatsapp-bar {
         background: #25D366;
-        padding: 22px; /* 18 → 22 */
+        padding: 22px;
         border-radius: 20px;
         display: flex;
         align-items: center;
         gap: 14px;
         margin: 0 15px 18px 15px;
         color: #fff;
-        font-size: 24px;  /* 20 → 24 */
+        font-size: 24px;
         font-weight: 700;
         text-decoration: none;
     }
     .whatsapp-bar img {
-        width: 42px;  /* 34 → 42 */
-        height: 42px; /* 34 → 42 */
+        width: 42px;
+        height: 42px;
     }
     .whatsapp-bar span {
-        font-size: 22px !important; /* 18 → 22 */
+        font-size: 22px !important;
     }
 
-    /* FOTOĞRAF GALERİSİ 2x2 (DEĞİŞMEDİ) */
- 
-    /* FOTOĞRAF GALERİSİ 2x2 (DEĞİŞMEDİ) */
+    /* FOTOĞRAF GALERİSİ 2x2 - KIRPMADAN KÜÇÜLTÜLDÜ */
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 6px;
         padding: 10px;
+        justify-items: center; /* Fotoğrafı hücre ortalar */
     }
     .gallery img {
+        max-width: 140px;  /* Fotoğrafın maksimum genişliği */
         width: 100%;
+        height: auto;      /* ORANI BOZMADAN küçültme */
         border-radius: 12px;
-        object-fit: cover;
     }
+
     /* ALTTAKİ SABİT WHATSAPP BUTONU */
     .whatsapp-bottom {
         position: fixed;
@@ -71,8 +72,8 @@
         right: 0;
         background: #25D366;
         text-align: center;
-        padding: 22px 0; /* 18 → 22 */
-        font-size: 24px; /* 20 → 24 */
+        padding: 22px 0;
+        font-size: 24px;
         font-weight: 700;
         color: #fff;
         text-decoration: none;
@@ -107,5 +108,3 @@
 <a href="https://wa.me/905362000000" class="whatsapp-bottom">
     WhatsApp Tıkla →
 </a>
-
-
