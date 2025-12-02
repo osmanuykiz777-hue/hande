@@ -12,41 +12,44 @@
     .profile-box {
         display: flex;
         align-items: center;
-        gap: 15px;
-        padding: 20px;
+        gap: 18px;
+        padding: 25px;
     }
     .profile-box img {
-        width: 85px;
-        height: 85px;
+        width: 115px;   /* 85 → 115 yapıldı */
+        height: 115px;  /* 85 → 115 yapıldı */
         border-radius: 50%;
         object-fit: cover;
     }
     .profile-info {
-        font-size: 22px;
+        font-size: 26px;   /* 22 → 26 */
         font-weight: 700;
-        line-height: 28px;
+        line-height: 32px; /* 28 → 32 */
     }
 
     /* WHATSAPP ÜST BAR */
     .whatsapp-bar {
         background: #25D366;
-        padding: 18px;
+        padding: 22px; /* 18 → 22 */
         border-radius: 20px;
         display: flex;
         align-items: center;
-        gap: 12px;
-        margin: 0 15px 15px 15px;
+        gap: 14px;
+        margin: 0 15px 18px 15px;
         color: #fff;
-        font-size: 20px;
+        font-size: 24px;  /* 20 → 24 */
         font-weight: 700;
         text-decoration: none;
     }
     .whatsapp-bar img {
-        width: 34px;
-        height: 34px;
+        width: 42px;  /* 34 → 42 */
+        height: 42px; /* 34 → 42 */
+    }
+    .whatsapp-bar span {
+        font-size: 22px !important; /* 18 → 22 */
     }
 
-    /* FOTOĞRAF GALERİSİ 2x2 */
+    /* FOTOĞRAF GALERİSİ 2x2 (DEĞİŞMEDİ) */
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -67,8 +70,8 @@
         right: 0;
         background: #25D366;
         text-align: center;
-        padding: 18px 0;
-        font-size: 20px;
+        padding: 22px 0; /* 18 → 22 */
+        font-size: 24px; /* 20 → 24 */
         font-weight: 700;
         color: #fff;
         text-decoration: none;
@@ -88,7 +91,7 @@
 <a href="https://wa.me/905362000000" class="whatsapp-bar">
     <img src="whatsapp.png" alt="">
     WHATSAPP<br>
-    <span style="font-size:18px;">+90 536 200 00 00</span>
+    <span>+90 536 200 00 00</span>
 </a>
 
 <!-- FOTOĞRAF GALERİSİ -->
