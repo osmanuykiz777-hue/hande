@@ -25,25 +25,36 @@
         font-size: 26px;
         font-weight: 700;
         line-height: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* HIZLI ARA BUTONU (PROFİL YANINDA) */
-    .call-btn {
+    /* HIZLI ARA + WHATSAPP PROFİL YANINDA */
+    .profile-buttons {
+        display: flex;
+        gap: 12px;
+    }
+    .profile-buttons a {
         display: inline-flex;
         align-items: center;
-        gap: 10px;
-        background: #000;
+        gap: 8px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 22px;
         color: #fff;
         text-decoration: none;
-        font-weight: 700;
-        font-size: 18px;
-        padding: 10px 14px;
-        border-radius: 12px;
-        margin-top: 10px;
     }
-    .call-btn img {
-        width: 24px;
-        height: 24px;
+    .profile-buttons .whatsapp-btn {
+        background: #25D366;
+    }
+    .profile-buttons .call-btn {
+        background: #000;
+    }
+    .profile-buttons img {
+        width: 28px;
+        height: 28px;
     }
 
     /* WHATSAPP ÜST BAR */
@@ -81,10 +92,18 @@
         object-fit: cover;
     }
 
+    /* AÇIKLAMA METNİ */
+    .description {
+        padding: 15px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #333;
+    }
+
     /* SABİT HIZLI ARA BUTONU (ALTTA, WHATSAPP ÜSTÜ) */
     .call-btn-bottom {
         position: fixed;
-        bottom: 60px; /* WhatsApp butonunun üstüne */
+        bottom: 60px;
         left: 0;
         right: 0;
         background: #000;
@@ -116,17 +135,19 @@
 <!-- PROFİL ALANI -->
 <div class="profile-box">
     <img src="profil.jpg" alt="">
-    <div>
-        <div class="profile-info">
-            VİP ESCORT ESMA<br>
-            Konum : Alsancak
-        </div>
+    <div class="profile-info">
+        VİP ESCORT ESMA<br>
+        Konum : Alsancak
 
-        <!-- HIZLI ARA BUTONU (PROFİL YANINDA) -->
-        <a href="tel:+905362000000" class="call-btn">
-            <img src="call-icon.png" alt="">
-            Tıkla Hızlı Ara
-        </a>
+        <!-- PROFİL YANINDA BUTONLAR -->
+        <div class="profile-buttons">
+            <a href="https://wa.me/905362000000" class="whatsapp-btn">
+                <img src="whatsapp.png" alt=""> WhatsApp
+            </a>
+            <a href="tel:+905362000000" class="call-btn">
+                <img src="call-icon.png" alt=""> Tıkla Hızlı Ara
+            </a>
+        </div>
     </div>
 </div>
 
@@ -136,6 +157,11 @@
     WHATSAPP<br>
     <span>+90 536 200 00 00</span>
 </a>
+
+<!-- AÇIKLAMA METNİ -->
+<div class="description">
+    Merhaba, Ben Escort MARİA. Resimlerimin Hepsi Gerçek ve Sadece Bana Aittirler! 22 yaşında, çıtır mı çıtır, alımlı, bakımlı ve güler yüzlü, temizliğe önem veren bir bayanım. Görüşmelerimde gizlilik son derece önemlidir. Şuan görüşmek için uygunum. Lütfen boş muhabbetleriniz için aramayınız!
+</div>
 
 <!-- FOTOĞRAF GALERİSİ -->
 <div class="gallery">
@@ -147,8 +173,7 @@
 
 <!-- SABİT HIZLI ARA BUTONU (ALTTA, WHATSAPP ÜSTÜ) -->
 <a href="tel:+905362000000" class="call-btn-bottom">
-    <img src="call-icon.png" alt="">
-    Tıkla Hızlı Ara
+    <img src="call-icon.png" alt=""> Tıkla Hızlı Ara
 </a>
 
 <!-- SABİT WHATSAPP BUTONU -->
